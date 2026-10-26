@@ -1,6 +1,6 @@
-x = 5
-print(x)
+from datetime import datetime
 
-x =+ 1
+current_time=datetime.now()
+day_of_week=current_time.weekday()
 
-print(x)
+print(day_of_week)
