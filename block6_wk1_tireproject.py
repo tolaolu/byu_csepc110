@@ -32,10 +32,10 @@ tireVolume = (
 print(f"The approximate volume is {tireVolume:.2f} liters.")
 
 # section 3, logging data to file on my desktop
-current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+current_time = datetime.now().strftime("%Y-%m-%d")
 
 # Path.home() finds my home directory, then I add the Desktop and tire_log.txt to the directory
-log_file_path = Path.home() / "Desktop" / "tire_log.txt"
+log_file_path = Path.home() / "Desktop" / "volumes.txt"
 
 try:
     with open(log_file_path, "a") as file:
@@ -45,7 +45,7 @@ try:
         file.write(f"Diameter: {tireDiameterInput} inches\n")
         file.write(f"Calculated Volume: {tireVolume:.2f} liters\n")
         file.write("-" * 30 + "\n")
-    print(f"Data successfully logged to your Desktop as 'tire_log.txt'.")
+    print(f"Data successfully logged to your Desktop as 'volumes.txt'.")
 
 except OSError as e:
     print(f"Could not write file due to a system error: {e}")
