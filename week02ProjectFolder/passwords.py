@@ -78,7 +78,7 @@ def password_strength(password, min_length=10, strong_length=16):
         print("Your password is found in the Top Passwords or Wordlist files. Please choose a different password.")
         return 1
 
-    # Calculate the character complexity using your previous function
+    # Calling the word_complexity function to get the complexity score of the password
     complexity = word_complexity(password)
     
     # Determine strength score (2 to 5) based on complexity and strong_length
