@@ -1,6 +1,5 @@
-from datetime import datetime
+def fullname(w1,w2):
+  return w1 + ' ' + w2
 
-current_time=datetime.now()
-day_of_week=current_time.weekday()
-
-print(day_of_week)
+f=fullname(w2='faith',w1='charity')
+print(f)
