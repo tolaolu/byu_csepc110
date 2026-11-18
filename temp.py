@@ -1,5 +1,8 @@
-def fullname(w1,w2):
-  return w1 + ' ' + w2
-
-f=fullname(w2='faith',w1='charity')
-print(f)
+metals={
+    "Ag" : "Silver",
+    "Al" : "Aluminum",
+    "Au" : "Gold",
+    "Cu" : "Copper",
+}
+newVar = len(metals)
+print(metals["Au"])
